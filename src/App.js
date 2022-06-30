@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+//import Commentary from "./Commentary";
+//import CommentOP from "./components/CommentOP";
+//import Frameforcode from "./components/Projectsides/Frameforcode";
+
+import Navbar from "./includes/Navbar";
+import Slider from "./includes/Slider";
+import Mainbody from "./includes/Mainbody";
+import Footer from "./includes/Footer";
+import Articlebox from "./includes/Articlebox";
+import {BrowserRouter, Switch, Route} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+     <Navbar />
+     <Slider />
+     <Articlebox />
+     <Mainbody />
+     <Footer />
+      
     </div>
   );
 }
 
 export default App;
+
