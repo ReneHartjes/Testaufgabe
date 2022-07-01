@@ -7,6 +7,19 @@ import footqr from "./pictures/QrailingFoot.png"
 
 
 function Footer() {
+
+
+    function Ceval(){
+
+       let langstate =  document.cookie
+
+      
+        console.log(langstate)
+        console.log( document.getElementById("Langs").value)
+        document.cookie = "SelectedLang"+document.getElementById("Langs").value;
+        console.log(document.cookie)
+    }
+
     return (
 
         <>
@@ -89,22 +102,23 @@ function Footer() {
 
 
 
-<div class="footerbtnline">
-<div class="footerbtnwrapper2">
+<div className="footerbtnline">
+<div className="footerbtnwrapper2">
 <div>
     <ul>
-        <li><div class="iconhold fb"></div></li>
-        <li><div class="iconhold yt"></div></li>
-        <li><div class="iconhold ig"></div></li>
-        <li><div class="iconhold in"></div></li>
+        <li><div className="iconhold fb"></div></li>
+        <li><div className="iconhold yt"></div></li>
+        <li><div className="iconhold ig"></div></li>
+        <li><div className="iconhold in"></div></li>
    
       </ul>
 </div>
     <div>
 
-    <select name="Langs" id="Langs">
+    <select name="Langs" id="Langs"  onChange={Ceval}>
+    <option value="English">English</option>
   <option value="German">German</option>
-  <option value="English">English</option>
+  
 
 </select>
 <select name="Country" id="Country">
@@ -127,8 +141,8 @@ function Footer() {
 
 
 
-<div class="footerbtnline">
-  <div class="footerbtnwrapper">
+<div className="footerbtnline">
+  <div className="footerbtnwrapper">
     <div>
       <h5>© 2006 - 2021 Q-railing GmbH & Co. KG
 </h5>

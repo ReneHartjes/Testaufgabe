@@ -23,6 +23,7 @@ function Mainbody() {
             <a className="klammerlink" href="#">LEARN MORE</a> <a className="klammerlink" href="#">VIEW PROJECTS</a></div>
         </div>
 </div>
+<div className="midwrap">
 <div id="bodymid">
 
     <div className="midtext">
@@ -36,11 +37,11 @@ function Mainbody() {
     <div className="midimg">
         <img src={Handy}/>
     </div>
-
+</div>
 </div>
 
-<div class="mainnews">
-
+<div className="mainnews">
+    <div className="wrapperNews">
     <div id="signupmain">
         <h3>Sign up for our <br></br>monthly newsletter</h3>
     </div>  
@@ -60,12 +61,12 @@ function Mainbody() {
         </div>
     </div>
     <div id="pipepic23">
-            <img id="pipepic2" src={Pipe2}></img>
+           
             <img id="pipepic3" src={Pipe3}></img>
             </div>
 </div>
-
-
+<img id="pipepic2" src={Pipe2}></img>
+</div>
 </div>
       
    

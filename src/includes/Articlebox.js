@@ -11,12 +11,17 @@ import img3 from "./pictures/artimg3.png"
 
 
 function Articlebox() {
+
+
+    
+
+
     return (
 <div className="mainarticlebox">
-    <div  class="colorfill">
-        <div class="articletop">
+    <div  className="colorfill">
+        <div className="articletop">
         </div>
-        <div class="articlebot">
+        <div className="articlebot">
         </div>
     </div>
     <div id="articleboxtext">
@@ -48,10 +53,10 @@ function Articlebox() {
             </div>
         </div>
     </div>
-    <div class="colorfill">
-        <div class="articletop">
+    <div className="colorfill">
+        <div className="articletop">
         </div>
-        <div class="articlebot">
+        <div className="articlebot">
         </div>
     </div>
 </div>

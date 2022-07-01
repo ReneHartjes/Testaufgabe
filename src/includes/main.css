@@ -187,6 +187,11 @@ a{
   z-index: 15;
   
 }
+
+.midwrap{
+  display:flex;
+  justify-content: center;
+}
 #mainpagelinks{
   display:flex;
   justify-content: center;
@@ -208,7 +213,7 @@ a{
 }
 
 .midtoptext h6{
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-align: center;
 }
 
@@ -258,13 +263,23 @@ a{
     background-color: #ffffff;
     display: flex;
     height:580px
+    ;width: 1200px
 }
 
 .mainnews{
     display: flex;
     padding-top: 55px;
     padding-bottom: 55px;
+    justify-content: center;
+    
 }
+
+.wrapperNews{
+  display:flex
+  ;width:1215px
+}
+
+
 
 #signupmain{
     flex-basis: 50%;
@@ -325,14 +340,16 @@ a{
 
 #pipepic2{
   float:right;
-  top: 160px;
+  top: 1620px;
   width: 120px;
+  right: 2px;
+  position: absolute;
  
 }
 
 #pipepic23{
   float: right;
-  width: 30%;
+ 
 
 }
 
@@ -687,6 +704,12 @@ a{
     }
   }
 
+  @media only screen and (min-width: 1920px) {
+  #pipepic2{
+
+    display: none;
+  }}
+
   .footer2spalte li{
     margin-top: 3px;
   }
@@ -703,3 +726,33 @@ a{
     justify-content: center;
     background-color: #072B49;
   }
+
+  .mainnav ul{
+    text-align: center;
+  }
+  #loginmenu{
+    display:none
+    
+  }
+
+  #login{
+    position:relative;
+  }
+  #login:hover #loginmenu{
+    display:block !important;
+    position:absolute
+  }
+
+
+#loginmenu{
+  width: 200px;
+  margin-left: -150px;
+}
+#loginmenu input{
+  width: 150px;
+  float:right;
+}
+#loginmenu label{
+  color:white;
+  float:left;
+}
