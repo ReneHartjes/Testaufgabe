@@ -12,22 +12,24 @@ import Slideimg4 from "./pictures/Slide4.png"
 function Slider() {
 
   const [count, setCount] = useState(0);
-  const imgses = [
 
-    "https://www.w3schools.com/w3images/workbench.jpg",
-    "https://www.w3schools.com/w3images/sound.jpg",
-    "https://www.w3schools.com/w3images/workbench.jpg",
-    "https://www.w3schools.com/w3images/sound.jpg"
-
-
-  ]
 
   const imgses2 = [
     Slideimg1,Slideimg2,Slideimg3,Slideimg4
 
   ]
 
-  const next = () =>{if(count >= 3){setCount(0)}else{setCount(count+1)}}
+  const next = () =>{if(count >= 3){setCount(0)}else{setCount(count+1)}
+ 
+  document.getElementById("imgg").classList.add("active")
+  if(document.getElementById("imgg").classList.contains("active") == true && count == 2){
+    document.getElementById("imgg").classList.remove("active")
+  }
+ 
+
+
+
+}
   const prev = () =>{if(count < 0){setCount(3)}else{setCount(count-1)}}
 
     return (
@@ -36,7 +38,7 @@ function Slider() {
 <div id="sliderrr">
 <div className="images-slideshow">
   <div className ="imageSlides ">
-      <img src={imgses2[count]}/>
+      <img id="imgg" src={imgses2[count]}/>
   </div>
 
   <a className="slider-btn previous" id="frontbtn" onClick={prev}>❮</a>

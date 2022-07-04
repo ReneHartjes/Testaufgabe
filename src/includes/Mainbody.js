@@ -1,5 +1,5 @@
 import {Browserrouter, Link} from 'react-router-dom'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import "./main.css"
 import Handy from "./pictures/Handy.png"
 import Pipe from "./pictures/Rohr.png"
@@ -12,15 +12,40 @@ import Pipe3 from "./pictures/pipeBlurr.png"
 
 
 function Mainbody() {
+
+    const [Brand, setBrand] = useState("THE PREMIUM BRAND IN RAILING SYSTEMS");
+    const [Brand2, setBrand2] = useState("Sophisticated design, unbeatable quality, rapid");
+    const [Brand3, setBrand3] = useState("assembly and excellent safety.");
+    const [Brand4, setBrand4] = useState("LEARN MORE");
+    const [Brand5, setBrand5] = useState("VIEW PROJECTS");
+
+    useEffect(() => {
+        if(document.cookie.match(/lang=German/g)){
+        setBrand("DIE PREMIUMMARKE FÜR GELÄNDERSYSTEME")
+        setBrand2("Durchdachtes Design, unschlagbare Qualität")
+        setBrand3(", schnelle Montage und hohe Sicherheit.")
+        setBrand4("Erfahre mehr")
+        setBrand5("Projekte ansehen")
+        }
+      }, []);
+
+
+
+
+
+
+
+
+
     return (
 <div className="mainbody">
 <div className="midtoptext" >
         <div>
-            <h6>THE PREMIUM BRAN IN RAILING SYSTEMS</h6>
-            <h3>Sophisticated design, unbeatable quality, rapid <br/>
-                assembly and excellent safety.</h3>
+            <h6>{Brand}</h6>
+            <h3>{Brand2}<br/>
+            {Brand3}</h3>
                 <div id="mainpagelinks">
-            <a className="klammerlink" href="#">LEARN MORE</a> <a className="klammerlink" href="#">VIEW PROJECTS</a></div>
+            <a className="klammerlink" href="#">{Brand4}</a> <a className="klammerlink" href="#">{Brand5}</a></div>
         </div>
 </div>
 <div className="midwrap">

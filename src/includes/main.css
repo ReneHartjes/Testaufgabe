@@ -142,7 +142,7 @@
     width: 150px;;
 }
 #articleboxtext{
-
+    
     width: 1050px;
     border:1px solid black;
     height:150px;
@@ -206,7 +206,7 @@ a{
 .midtoptext{
     display:flex;
     justify-content: center;
-    height: 250px;
+    height: 345px;
     align-items: center;
     background-color: #f5f5f5;
     padding-bottom: 15px;
@@ -340,8 +340,8 @@ a{
 
 #pipepic2{
   float:right;
-  top: 1620px;
-  width: 120px;
+  top: 1720px;
+  width: 110px;
   right: 2px;
   position: absolute;
  
@@ -731,8 +731,11 @@ a{
     text-align: center;
   }
   #loginmenu{
-    display:none
-    
+    display:none;
+   width: 200px;
+   height: 75px;
+   border: 1px solid white;
+   z-index: 999;
   }
 
   #login{
@@ -750,9 +753,151 @@ a{
 }
 #loginmenu input{
   width: 150px;
+  margin-top: 10px;
   float:right;
 }
 #loginmenu label{
   color:white;
+  margin-top: 10px;
   float:left;
+}
+
+
+
+@keyframes example {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.35;}
+  67%  {opacity: 0.75}
+  100% {opacity: 1;}
+}
+
+.active{
+animation-name: example;
+animation-duration: 1s ;
+animation-iteration-count: 1;
+}
+
+/*Searchbar*/
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+#lupe {
+
+  background-color: none;
+  width: 35px;
+  height: 35px;
+  margin-left: 25px;
+  align-self: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#clearBtn {
+
+  background-color: none;
+  width: 35px;
+  height: 35px;
+  margin-left: 25px;
+  align-self: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.search input {
+  position: relative;
+
+  left: 20px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.searchInputs {
+  padding-top: 10px;
+  width: 300px;
+  display: flex;
+  border-radius: 15px;
+  background-color: none;
+}
+
+.dataResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+.dataItem {
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  float: left;
+  z-index: 1;
+  border: 1px solid black;
+  box-shadow: 2px 2px #333;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  color: whitesmoke;
+  opacity: 0.8;
+  margin-left: 200px;
+  background-image: linear-gradient(to right, #28313b, #485461);
+}
+
+.dataItem h4 {
+  border-bottom: 3px solid grey;
+  background-color: white;
+
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+
+.dataItem p {
+  padding: 10px;
+  font-size: 16px;
+}
+.opstuff {
+  display: flex;
+  justify-content: center;
+}
+
+#search{
+  position: relative;
+}
+
+#search:hover #searchbarinclude{
+  display: block;
+}
+
+#searchbarinclude{
+  display:none;
+  z-index: 1000;
+  right: 0px;
+  top: 20px;
+  width: 300px;
+  height: 200px;
+  
+  position: absolute;
+}
+
+
+#Langs{
+  padding-left: 15px ;
+}
+
+#Country{
+  padding-left: 15px;
 }

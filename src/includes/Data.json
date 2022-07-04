@@ -1,0 +1,86 @@
+[
+   
+
+    {
+        "tags": "My CV page",
+       
+        "imageLink": "images/things-fall-apart.jpg",
+        "language": "English",
+        "link": "https://renehartjes.website",
+     
+        "title": "Cvpage"
+    
+      },
+
+
+
+
+      {
+        "tags": "My Python projects",
+     
+        "imageLink": "images/things-fall-apart.jpg",
+        "language": "English",
+        "link": "https://github.com/ReneHartjes",
+       
+        "title": "Python"
+      
+      },
+      {
+        "tags": "merch Overview page",
+       
+        "imageLink": "images/things-fall-apart.jpg",
+        "language": "English",
+        "link": "https://shop.de.q-railing.com/de-de/",
+       
+        "title": "Qrailing Shop"
+       
+      },
+      {
+        "tags": "My graphic design section",
+
+        "imageLink": "images/things-fall-apart.jpg",
+        "language": "English",
+        "link": "https://github.com/ReneHartjes",
+        
+        "title": "Graphicdesign"
+      
+      },
+
+
+      {
+        "tags": "Awesome project with Arduino und Python",
+        
+        "imageLink": "images/things-fall-apart.jpg",
+        "language": "English",
+        "link": "https://github.com/ReneHartjes",
+        
+        "title": "Voice Control"
+       
+      }
+      ,
+
+      {
+        "tags": "tiny Python project",
+     
+        "imageLink": "./pictures/Qlogo.png",
+        "language": "English",
+        "link": "https://www.q-railing.com/de-de/",
+      
+        "title": "Qrailing Seite"
+    
+      }
+
+      ,
+      {
+        "tags": "Mein Githublink",
+   
+        "imageLink": "images/things-fall-apart.jpg",
+        "language": "English",
+        "link": "https://github.com/ReneHartjes",
+      
+        "title": "Githublink"
+     
+      }
+
+
+]

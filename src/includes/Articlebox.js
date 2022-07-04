@@ -1,5 +1,5 @@
 import {Browserrouter, Link} from 'react-router-dom'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import "./main.css"
 
 import img1 from "./pictures/artimg1.png"
@@ -12,7 +12,17 @@ import img3 from "./pictures/artimg3.png"
 
 function Articlebox() {
 
+    const [Railing, setRailing] = useState("Glass railings");
+    const [Railing2, setRailing2] = useState("Baluster railings");
+    const [Railing3, setRailing3] = useState("Wall railings");
 
+    useEffect(() => {
+        if(document.cookie.match(/lang=German/g)){
+        setRailing("Glass Geländer")
+        setRailing2("Balustraden Geländer")
+        setRailing3("Wand Geländer")
+        }
+      }, []);
     
 
 
@@ -31,7 +41,7 @@ function Articlebox() {
             </img>
             </div>
             <div>
-                <a>Glass railings</a><span><button>></button></span>
+                <a>{Railing}</a><span><button>></button></span>
             </div>
         </div>
         <div className="articlewrap">
@@ -40,7 +50,7 @@ function Articlebox() {
             </img>
             </div>
             <div>
-                <a>Baluster railings</a><span><button>></button></span>
+                <a>{Railing2}</a><span><button>></button></span>
             </div>
         </div>
         <div className="articlewrap">
@@ -49,7 +59,7 @@ function Articlebox() {
             </img>
             </div>
             <div>
-                <a>Wall railings</a><span><button>></button></span>
+                <a>{Railing3}</a><span><button>></button></span>
             </div>
         </div>
     </div>

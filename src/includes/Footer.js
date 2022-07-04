@@ -8,6 +8,11 @@ import footqr from "./pictures/QrailingFoot.png"
 
 function Footer() {
 
+    const [ph, setPh] = useState("..english");
+
+    var delete_cookie = function(name) {
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    };
 
     function Ceval(){
 
@@ -16,8 +21,17 @@ function Footer() {
       
         console.log(langstate)
         console.log( document.getElementById("Langs").value)
-        document.cookie = "SelectedLang"+document.getElementById("Langs").value;
+        document.cookie = "lang="+document.getElementById("Langs").value;
         console.log(document.cookie)
+
+        if(document.cookie.match(/German/g) && document.getElementById("Langs").value == "English"){
+
+            delete_cookie('lang');
+        }
+
+
+        
+        window.location.reload();
     }
 
     return (
@@ -116,6 +130,7 @@ function Footer() {
     <div>
 
     <select name="Langs" id="Langs"  onChange={Ceval}>
+    <option value="" placeholder="choose"> </option>
     <option value="English">English</option>
   <option value="German">German</option>
   
