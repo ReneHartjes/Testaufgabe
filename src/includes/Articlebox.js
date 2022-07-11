@@ -1,5 +1,6 @@
 import {Browserrouter, Link} from 'react-router-dom'
 import {useState, useEffect} from 'react'
+import "./responsive.css"
 import "./main.css"
 
 import img1 from "./pictures/artimg1.png"

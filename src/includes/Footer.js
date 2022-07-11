@@ -1,6 +1,7 @@
 import {Browserrouter, Link} from 'react-router-dom'
 import {useState} from 'react'
 import "./main.css"
+import "./responsive.css"
 import footqr from "./pictures/QrailingFoot.png"
 
 

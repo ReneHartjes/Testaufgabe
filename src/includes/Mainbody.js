@@ -1,6 +1,7 @@
 import {Browserrouter, Link} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import "./main.css"
+import "./responsive.css"
 import Handy from "./pictures/Handy.png"
 import Pipe from "./pictures/Rohr.png"
 import Pipe2 from "./pictures/pipe.png"

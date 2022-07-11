@@ -1,6 +1,7 @@
 import {Browserrouter, Link} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import "./main.css"
+import "./responsive.css"
 import Logo from "./pictures/Qlogodark.png"
 import Hphone from "./pictures/headphones.png"
 import Scart from "./pictures/shoppingKart.png"
@@ -34,7 +35,22 @@ function Navbar() {
           }, []);
         
 
- 
+   
+
+    function Responsivemenu(){
+       let Resmenu = document.getElementById("responsivemenu")
+       let Resbtn = document.getElementById("rspbtn")
+        console.log("qqw")
+
+        if(Resmenu.classList.contains("active") == true){
+            Resmenu.classList.remove("active")
+            Resbtn.classList.remove("activebtn")
+        }else{
+            Resmenu.classList.add("active")
+            Resbtn.classList.add("activebtn")
+        }
+
+    }
   
 
     return (
@@ -42,7 +58,7 @@ function Navbar() {
 <div className="mainnav">
     <div>
     <ul>
-        <li><img src={Logo} /></li>
+        <li  id="logo"><img src={Logo} /></li>
        <li><a id="Produkte" href="#">{Produkte}</a></li>
        <li><a id="Sytems"href="#">{Sytems}</a></li>
        <li><a id="Projects"href="#">{Projects}</a></li>
@@ -54,15 +70,33 @@ function Navbar() {
    
     </ul>
     <ul id="Usernav">
-        <li><img src={Hphone} width="32" height="32"/><a id="custsupport" href="#">{Custs}</a><span></span><p>|</p></li>
-        <li><a  href="#"><img src={Scart} width="32" height="32"/></a><span id="scartnbr"><p>{Nbr}</p></span></li>
-       <li id="login"><a  href="#"><img src={Login} width="32" height="32"/></a><div id="loginmenu"><label>login</label><input type="text" /><br></br><label>Pw</label><input type="password" /></div></li>
-       <li id="search"><a href="#" ><img src={Lupe} width="32" height="32"/></a><span id="searchbarinclude"><SearchBar data={data} /></span></li>
+        <li id="custsupportli"><img src={Hphone} width="22" height="22"/><a id="custsupport" href="#">{Custs}</a><span><div id="CustSupportAdd"></div></span><p>|</p></li>
+        <li><a  href="#"><img src={Scart} width="22" height="22"/></a><span id="scartnbr"><p>{Nbr}</p></span></li>
+       <li id="login"><a  href="#"><img src={Login} width="22" height="22"/></a><div id="loginmenu"><label>login</label><input type="text" /><br></br><label>Pw</label><input type="password" /></div></li>
+       <li id="search"><a href="#" ><img src={Lupe} width="22" height="22"/></a><span id="searchbarinclude"><SearchBar data={data} /></span></li>
     </ul>
     
     </div>
       
    </div>
+
+    <div id="responsivebtn">
+        <button id="rspbtn" onClick={Responsivemenu}></button>
+        <br/>
+
+    </div>
+
+    
+    <div id="responsivemenu" className ="active">
+            <ul>       
+                <li><a id="Produkte" href="#">{Produkte}</a></li>
+                <li><a id="Sytems"href="#">{Sytems}</a></li>
+                <li><a id="Projects"href="#">{Projects}</a></li>
+                <li><a id="Service" href="#">{Service}</a></li>
+                <li><a id="Contact" href="#">{Contact}</a></li>
+       </ul>
+        </div>
+
    </div>
     );
 

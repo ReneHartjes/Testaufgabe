@@ -1,3 +1,10 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
         body {
             font-family: 'Open Sans', sans-serif;
@@ -26,7 +33,7 @@
     justify-content: center;
 }
 .mainnav div ul:first-child li{
-    width: 105px
+    width: 100px
 }
 .mainnav ul:last-child{
     flex-basis: 55%;
@@ -137,14 +144,17 @@
 }
 .mainnav{
     max-width: 1215px;
+    font-size: 12px;
+    font-weight: 700;
 }
 #articleboxtext img{
     width: 150px;;
 }
 #articleboxtext{
-    
+    z-index: 200;
     width: 1050px;
-    border:1px solid black;
+    -webkit-box-shadow:-1px 3px 7px -1px rgba(166,166,166,0.65);
+    box-shadow: -1px 3px 7px -1px rgba(166,166,166,0.65);
     height:150px;
     display: flex;
 
@@ -177,6 +187,19 @@
 a{
   text-decoration: none;
 }
+#mail{
+  -webkit-box-shadow:-1px 3px 7px -1px rgba(166,166,166,0.65);
+  box-shadow: -1px 3px 7px -1px rgba(166,166,166,0.65);
+  border: 0px solid;
+}
+
+#mail2{
+  -webkit-box-shadow:-1px 3px 7px -1px rgba(166,166,166,0.65);
+  box-shadow: -1px 3px 7px -1px rgba(166,166,166,0.65);
+  border: 1px transparent solid ;
+
+}
+
 
 .klammerlink{
   color:#072B49;
@@ -263,7 +286,7 @@ a{
     background-color: #ffffff;
     display: flex;
     height:580px
-    ;width: 1200px
+    ;width: 100%;
 }
 
 .mainnews{
@@ -300,6 +323,7 @@ a{
   margin-top: 14px;
   background-color: #072B49;
   color:white
+  ; border-radius: 2px;
 }
 
 #subBtn::after{
@@ -314,10 +338,77 @@ a{
  height: 35px;
   
 }
+#responsivebtn{
+  display: none;
+
+}
+
+#responsivebtn button{
+  width: 48px;
+  height: 48px;
+
+  background-image: url("./pictures/respbtn.png");
+  background-size: cover;
+  background-color: #072B49;
+}
+
+#logo img{
+  width: 50px;
+}
+#logo{
+  width: 50px;
+}
+.activebtn{
+  transform: rotate(90deg);
+  transition-duration: 300ms;
+}
+
+#responsivemenu{
+  display: none;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  margin-left: -25px;
+  
+}
+#responsivemenu li:last-child{
+  border-bottom: 1px solid white;
+}
+#responsivemenu li{
+  list-style: none;
+ border-top: 1px solid white;
+ width: 100%;
+ padding:6px;
+}
+#responsivemenu a{
+  color: white;
+}
+.active{
+  display: block !important;
+}
+
+
 
 #mail2{
   margin-top: 10px;
 }
+#custsupportli{
+  position: relative;
+}
+
+#CustSupportAdd{
+  height: 15px;
+  width: 15px;
+ background-size: cover;
+  z-index: 100;
+  display: inline-block;
+ position: absolute;
+ top: 9px;
+right: 47px;
+background-image: url("./pictures/custpoint.png");
+}
+
 #signupinfo{
     position: relative;
 }
@@ -402,15 +493,26 @@ a{
     display: block;}
 
 .articlewrap:first-child{
-    border-right: 3px dotted #ccc;
+    border-right: 1px  #ccc;
+    border-left: 0px #ccc;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    border-style: dotted dashed ;
+
 }
 .articlewrap:last-child{
-    border-left: 3px dotted #ccc;
+    border-left:1px #ccc;
+    border-right: 0px solid;
+    
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    border-style: dotted dashed ;
 }
 #custsupport{
   margin-left: 5px;
 }
 .articlewrap {
+  background-color: #ffffff;
     text-align: center;
         flex-basis: 33.3333%;
 
@@ -603,7 +705,9 @@ a{
     opacity: 0.7;
     cursor: pointer;
   }
-
+  #search{
+    margin-left: -7px;
+  }
   .mainnav ul{
     list-style: none;
   }
@@ -615,12 +719,10 @@ a{
   #Usernav li:first-child{
     display: flex;
     align-items: center;
-    width: 260px;
+    width: 211px;
   }
   #Usernav li:first-child a::after{
-    content: "°";
-    color: greenyellow;
-    margin-left: 2px;
+
   }
   #Usernav li:first-child img{
   
@@ -630,10 +732,11 @@ a{
 
   #Usernav li:first-child p{
   
-    margin-left: 7px;
+    margin-left: 16px;
     margin-top: 15px;
     font-size: 1.5em;
-  
+    font-weight: 500;
+    opacity: 0.3;
     color:white
   }
 
@@ -646,22 +749,23 @@ a{
   }
 
   #scartnbr{
-    background-color: #4296df;
+    background-color: #a7d3f9;
   
     border-radius: 50%;
     width: 16px;
     position: absolute;
     height: 16px;
-    margin-top: -6px;
-    margin-left: -3px
+    margin-top: -10px;
+    margin-left: -0px
   }
 
   #scartnbr p{
     position: absolute;
-    top:-17px;
-    left: 4px;
-    font-size: 90%;
+    top:-9px;
+    left: 5px;
+    font-size: 80%;
     font-weight: bold;
+    font-style: normal;
     
   }
   #dlllink{
@@ -683,32 +787,6 @@ a{
     width: 400px;
   }
 
-  @media only screen and (min-width: 1200px) {
-    .Footerwrap{
-      width: 1215px;
-      text-align: left;
-    }
-
-    .footer1spalte ul li{
-     margin-left: -15px;
-    }
-    .footer2spalte ul li{
-      margin-left: -15px;
-     }
-
-     .footer1spalte ul{
-      margin-left: -25px;
-     }
-     #footerlogoarea div{
-      width: 1215px ;
-    }
-  }
-
-  @media only screen and (min-width: 1920px) {
-  #pipepic2{
-
-    display: none;
-  }}
 
   .footer2spalte li{
     margin-top: 3px;
