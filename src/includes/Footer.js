@@ -47,13 +47,13 @@ function Footer() {
             </div>
         </div>
 <div className="mainfooter">
-    <div className='Footerwrap'>
+    <div className='footerwrap'>
         <div className='footer1spalte'>
             <h4>COMPANY</h4>
 
             <ul>
                 <li><a>About us</a></li>
-                <li><a>Careers</a></li>
+                <li id="careers"><a>Careers<span>WE'RE HIRING</span></a></li>
                 <li><a>Contact us</a></li>
                 <li><a>Become a customer</a></li>
             </ul>
@@ -132,13 +132,13 @@ function Footer() {
 </div>
     <div id="langselec">
 
-    <select name="Langs" id="Langs"  onChange={Ceval}>
+    <select name="langs" id="langs"  onChange={Ceval}>
  
     <option value="" selected="selected">Select lang</option>
     <option value="English" >English</option>
   <option value="German">German</option>
 </select><img id="langicon" src={langicon} height="16" width="16"></img>
-<select name="Country" id="Country">
+<select name="country" id="country">
   <option value="Germany">Germany</option>
   <option value="GB">Great Britan</option>
   <option value="AUS">Australia</option>

@@ -54,23 +54,23 @@ function Navbar() {
   
 
     return (
-        <div className='Navwrap'>
+        <div className='navwrap'>
 <div className="mainnav">
     <div>
     <ul>
         <li  id="logo"><img src={Logo} /></li>
-       <li><a id="Produkte" href="#">{Produkte}</a></li>
-       <li><a id="Sytems"href="#">{Sytems}</a></li>
-       <li><a id="Projects"href="#">{Projects}</a></li>
-       <li><a id="Service" href="#">{Service}</a></li>
-       <li><a id="Contact" href="#">{Contact}</a></li>
+       <li><a id="produkte" href="#">{Produkte}</a></li>
+       <li><a id="sytems"href="#">{Sytems}</a></li>
+       <li><a id="projects"href="#">{Projects}</a></li>
+       <li><a id="service" href="#">{Service}</a></li>
+       <li><a id="contact" href="#">{Contact}</a></li>
        
      </ul>   
     <ul>
    
     </ul>
     <ul id="Usernav">
-        <li id="custsupportli"><img src={Hphone} width="22" height="22"/><a id="custsupport" href="#">{Custs}</a><span><div id="CustSupportAdd"></div></span><p>|</p></li>
+        <li id="custsupportli"><img src={Hphone} width="22" height="22"/><a id="custsupport" href="#">{Custs}</a><span><div id="custsupportadd"></div></span><p>|</p></li>
         <li><a  href="#"><img src={Scart} width="22" height="22"/></a><span id="scartnbr"><p>{Nbr}</p></span></li>
        <li id="login"><a  href="#"><img src={Login} width="22" height="22"/></a><div id="loginmenu"><label>login</label><input type="text" /><br></br><label>Pw</label><input type="password" /></div></li>
        <li id="search"><a href="#" ><img src={Lupe} width="22" height="22"/></a><span id="searchbarinclude"><SearchBar data={data} /></span></li>

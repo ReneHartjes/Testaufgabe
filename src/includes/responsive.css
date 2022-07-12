@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1200px) {
-    .Footerwrap{
+    .footerwrap{
       width: 1215px;
       text-align: left;
     }
@@ -29,11 +29,30 @@
     #articleboxtext{
       width: 950px;
     }
+    #pipepic{
+      right: -350px
+    }
+    #signupmain {
+      justify-content: flex-start;
+    }
+    #textblock{
+      min-width: unset;
+    }
+
+  }
+  @media only screen and (min-width: 1620px) {
+    .midtext{
+      justify-content: flex-end !important;
+    }
+    #textblock{
+      min-width: 600px;
+    }
   }
   @media only screen and (min-width: 1620px) {
     .mainnav{
         width: 1400px;
     }
+
   }
   @media only screen and (min-width: 2320px) {
   #pipepic2{
@@ -61,7 +80,7 @@
         height: 550px;
         justify-content: flex-start;
     }
-    .Footerwrap{
+    .footerwrap{
         flex-wrap: wrap;
     }
     .footer2spalte{
@@ -122,6 +141,7 @@
       display: block;
 
     }
+    
     #overlay{
       display: block;
       width: 100%;
@@ -136,6 +156,7 @@
       right: 25%;
       top:40%;
       color:white;
+      text-align: center;
    
     }
     #textblock a{
@@ -170,7 +191,7 @@
     .mainslider{
         display: none;
     }
-    .Navwrap{
+    .navwrap{
         justify-content: flex-start;
         flex-direction: column;}
     #pipepic2{
@@ -226,7 +247,7 @@
     #bodymid {
       height: 520px;
     }
-    .Footerwrap, .mainfooter{
+    .footerwrap, .mainfooter{
       display: block;
   
     }
@@ -250,7 +271,7 @@
     .mainfooter{
       position: relative;
     }
-    .Footerwrap{
+    .footerwrap{
       background-color: #072B49;
     }
     .footerbtnline{
@@ -299,6 +320,10 @@
       top: 1500px;
       width: 100px
     }
+    #footerlogoarea{
+      display: block;
+      padding-left: 25px;
+    }
   }
   @media only screen and (max-width: 570px) {
     #textblock{
@@ -338,7 +363,7 @@
   .midtoptext div{
     padding-bottom: 35px;
   }
-  #Langs, #Country{
+  #langs, #country{
     margin-top: 55px;
   }
   #textblock {

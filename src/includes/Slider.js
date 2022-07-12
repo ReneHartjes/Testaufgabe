@@ -36,14 +36,14 @@ function Slider() {
 <div className="mainslider">
     
 <div id="sliderrr">
-<div className="images-slideshow">
+<div className="imagesslideshow">
   <div className ="imageSlides ">
       <img id="imgg" src={imgses2[count]}/>
   </div>
 
-  <a className="slider-btn previous" id="frontbtn" onClick={prev}>❮</a>
-  <a className="slider-btn next" onClick={next} id="nextbtn">❯</a>
-  <p id="couterr">{count+1}/4</p>
+  <a className="sliderbtn previous" id="frontbtn" onClick={prev}>❮</a>
+  <a className="sliderbtn next" onClick={next} id="nextbtn">❯</a>
+  <p id="couterr">{count+1}<span>/4</span></p>
 
 </div>
 </div>
