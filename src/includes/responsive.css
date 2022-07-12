@@ -23,10 +23,20 @@
     .mainnav{
         width: 1350px;
     }
+    .colorfill{ 
+    flex-basis: calc((100%-1350px)/2);
+    }
+    #articleboxtext{
+      width: 1350px;
+    }
   }
-  @media only screen and (min-width: 1920px) {
+  @media only screen and (min-width: 1590px) {
+    .mainnav{
+        width: 1590px;
+    }
+  }
+  @media only screen and (min-width: 2320px) {
   #pipepic2{
-
     display: none;
   }}
 
@@ -56,9 +66,66 @@
     .footer1spalte{
         
     }
+    #frontbtn{
+      display: none;
+    }
+    #nextbtn{
+      display: none;
+    }
+    #couterr{
+      display:none;
+    }
+    #sliderrr{
+      display:none;
+    }
 
+    #respimg{
+      display: block;
+    height: 200px;
+      min-width: 1100px;
+      width: 100%;
+      
+    }
 
   }
+
+  @media only screen and (max-width: 1024px) {
+    #bodymid{
+      display: block;
+      position: relative;
+    }
+
+    .midtext{
+      position: absolute;
+      z-index: 450;
+      width: 100%;
+      display: block;
+
+    }
+    #overlay{
+      display: block;
+      width: 100%;
+      z-index: 449;
+      height: 600px;
+      margin-top:-70px;
+      opacity: 0.5;
+      background-color: #333;
+    }
+    #textblock{
+      position: absolute;
+      right: 30%;
+      top:40%;
+      color:white;
+   
+    }
+    #textblock a{
+      background-color: white;
+      padding: 8px;
+      border-radius: 3px;
+    }
+  }
+
+
 
   @media only screen and (min-width: 768px) {
   #responsivemenu{
@@ -68,6 +135,9 @@
   @media only screen and (max-width: 768px) {
     .mainnav div:first-child{
         display:none
+    }
+    #signupmain h3{
+      display: none;
     }
 
     .mainslider{
@@ -85,5 +155,15 @@
         display: block;
         padding: 15px;
       
+    }
+    #textblock {
+      right: 15%;
+    }
+  }
+
+
+  @media only screen and (max-width: 678px) {
+    #articleboxtext img{
+      width: 150px;
     }
   }

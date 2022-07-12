@@ -6,6 +6,8 @@ import Handy from "./pictures/Handy.png"
 import Pipe from "./pictures/Rohr.png"
 import Pipe2 from "./pictures/pipe.png"
 import Pipe3 from "./pictures/pipeBlurr.png"
+import arrow from "./pictures/Qrailingsvgs/arrow_right_dark_blue.svg"
+import arrowwhite from "./pictures/Qrailingsvgs/arrow_right_white.svg"
 
 
 
@@ -46,17 +48,20 @@ function Mainbody() {
             <h3>{Brand2}<br/>
             {Brand3}</h3>
                 <div id="mainpagelinks">
-            <a className="klammerlink" href="#">{Brand4}</a> <a className="klammerlink" href="#">{Brand5}</a></div>
+            <a className="klammerlink" href="#">{Brand4} <img id="arrow1" src={arrow}></img></a> <a className="klammerlink" href="#">{Brand5} <img id="arrow2" src={arrow}></img></a></div>
         </div>
 </div>
 <div className="midwrap">
 <div id="bodymid">
 
     <div className="midtext">
-        <div>
+        <div id="textblock">
             <b><p>OUR BRAND NEW APP</p></b>
             <b><h3>Easy configuring and odering in a <br /> blink of an eye.</h3></b>
-            <a href="#" id="dlllink"> DOWNLOAD HERE</a>
+            <a href="#" id="dlllink"> DOWNLOAD HERE <img id="arrow2" src={arrow}></img></a>
+        </div>
+        <div id="overlay">
+
         </div>
     </div>
 
@@ -77,10 +82,10 @@ function Mainbody() {
             <p>Subscribe to our newsletter to benefit from exclusive <br />
             offers, product updates and best practices.</p>
             <input type="text" name="mail" placeholder='    E-mailadress..' id="mail"/>
-            <br />
+            <br /><br />
             <input type="checkbox" name="mail2" id="mail2"/><label>Yes, I agree with the <a id="pp">privacy policy</a></label>
-            <br />
-            <button id="subBtn">Subscribe now</button>
+            <br /> 
+            <button id="subBtn">Subscribe now <img id="arrow3" src={arrowwhite}></img></button>
             <img id="pipepic" src={Pipe}></img>
 
 

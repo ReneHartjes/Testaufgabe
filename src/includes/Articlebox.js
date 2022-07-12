@@ -6,6 +6,7 @@ import "./main.css"
 import img1 from "./pictures/artimg1.png"
 import img2 from "./pictures/artimg2.png"
 import img3 from "./pictures/artimg3.png"
+import arrow from "./pictures/Qrailingsvgs/arrow_right_dark_grey.svg"
 
 
 
@@ -42,7 +43,7 @@ function Articlebox() {
             </img>
             </div>
             <div>
-                <a>{Railing}</a><span><button>></button></span>
+                <a>{Railing}</a><span className='articlespan'><button className="arrowbotton"> <img className="arrowicon" src={arrow}></img></button></span>
             </div>
         </div>
         <div className="articlewrap">
@@ -51,7 +52,7 @@ function Articlebox() {
             </img>
             </div>
             <div>
-                <a>{Railing2}</a><span><button>></button></span>
+                <a>{Railing2}</a><span className='articlespan'><button className="arrowbotton"> <img className="arrowicon" src={arrow}></img></button></span>
             </div>
         </div>
         <div className="articlewrap">
@@ -60,7 +61,7 @@ function Articlebox() {
             </img>
             </div>
             <div>
-                <a>{Railing3}</a><span><button>></button></span>
+                <a>{Railing3}</a><span className='articlespan'><button className="arrowbotton"> <img className="arrowicon" src={arrow}></img></button></span>
             </div>
         </div>
     </div>

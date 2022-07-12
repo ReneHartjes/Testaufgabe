@@ -50,7 +50,9 @@ function Slider() {
 
 
 
-
+    <div id="respimg">
+     <img src={imgses2[0]}></img>
+    </div>
 
 
 </div>
