@@ -24,10 +24,10 @@
         width: 1350px;
     }
     .colorfill{ 
-    flex-basis: calc((100%-1350px)/2);
+    flex-basis: calc((100%-1050px)/2);
     }
     #articleboxtext{
-      width: 1350px;
+      width: 1050px;
     }
   }
   @media only screen and (min-width: 1590px) {
@@ -63,8 +63,24 @@
     .footer2spalte{
         flex-basis: 100%;
     }
+    .footer2spalte{
+      justify-content: center;
+      text-align: center;
+      margin-top: -85px;
+    }
+    .footer2spalte ul{
+      padding-left: 0px;
+      justify-content: center;
+    }
     .footer1spalte{
-        
+      max-width: 160px !important;
+    }
+    .footer1spalte h4{
+      font-size: 80%;
+    }
+    .footer2spalte h4{
+      font-size: 80%;
+      margin-left: 0px
     }
     #frontbtn{
       display: none;
@@ -113,7 +129,7 @@
     }
     #textblock{
       position: absolute;
-      right: 30%;
+      right: 25%;
       top:40%;
       color:white;
    
@@ -136,6 +152,7 @@
     .mainnav div:first-child{
         display:none
     }
+
     #signupmain h3{
       display: none;
     }
@@ -154,6 +171,7 @@
     #responsivebtn{
         display: block;
         padding: 15px;
+        background-color: #072B49;
       
     }
     #textblock {
@@ -166,4 +184,131 @@
     #articleboxtext img{
       width: 150px;
     }
+    .mainfooter{
+      height: 750px;
+    }
+    #pipepic23{
+      display: none;
+    }
+    #signupmain{
+     width: 10px;
+     flex-basis: 3%;
+    }
+    #signupinfo div p, #signupinfo div input{
+      max-width: 300px;
+    }
+    .articlewrap{
+      position: relative;
+    }
+    .articlewrap button{
+      position: absolute;
+      left: 30%
+    }
+    .mainnews{
+      margin-top: -35px
+    }
+    #bodymid {
+      height: 520px;
+    }
+    .Footerwrap, .mainfooter{
+      display: block;
+  
+    }
+
+    .footer2spalte{
+      margin-top: 0px;
+    }
+
+    .mainfooter .footer1spalte{
+      margin: 0 auto;
+    }
+    #footerlogoarea {
+      margin-bottom: -20px;
+    }
+    .mainfooter{
+      position: relative;
+    }
+    .Footerwrap{
+      background-color: #072B49;
+    }
+    .footerbtnline{
+      width: 100%;
+      display: block;
+     bottom:0px;
+     left:0px;
+     background-color: #072B49;
+    }
+    .footerbtnwrapper div{
+      display: block;
+      width: 100%;
+      float:right
+    }
+    .footerbtnwrapper div:first-child {
+      display:none;
+      margin-top: 35px;
+     
+    }
+    .footerbtnwrapper div:last-child ul{
+      padding: 0px;
+    }
+    .footerbtnwrapper2{
+      display: block;
+    }
+    .footerbtnwrapper2 div:first-child{
+      height: 30px;
+    }
+    .footerbtnwrapper2 div{
+      flex-basis: 100%;
+  
+    }
   }
+  @media only screen and (max-width: 570px) {
+    #textblock{
+      right: 15%;
+    }
+    .footerbtnline{
+      height: 110px;
+    }
+
+  }
+  @media only screen and (max-width: 460px) {
+  #articleboxtext{display: none;}
+  .mainbody{
+    margin-top: -80px;
+  }
+  .midtoptext h3{
+    font-size: 1.5em;
+  }
+  .articletop, .articlebot{
+    height: 10px;
+  }
+  .midtoptext {
+    margin-top: 62px
+  }
+  .midtoptext div{
+    padding-bottom: 35px;
+  }
+  #Langs, #Country{
+    margin-top: 55px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  #textblock {
+    right: 20%;
+    max-width: 250px;
+    margin: auto;
+
+  }
+      #signupinfo div p{
+        max-width: 220px;
+      }
+}
+@media only screen and (max-width: 400px) {
+  #textblock {
+    right: 17%;}
+}
+@media only screen and (max-width: 385px) {
+  #textblock {
+    right: 11%;
+  }
+}
