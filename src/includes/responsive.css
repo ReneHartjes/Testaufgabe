@@ -21,18 +21,18 @@
 
   @media only screen and (min-width: 1350px) {
     .mainnav{
-        width: 1350px;
+        width: 1330px;
     }
     .colorfill{ 
-    flex-basis: calc((100%-1050px)/2);
+    flex-basis: calc((100%-950px)/2);
     }
     #articleboxtext{
-      width: 1050px;
+      width: 950px;
     }
   }
-  @media only screen and (min-width: 1590px) {
+  @media only screen and (min-width: 1620px) {
     .mainnav{
-        width: 1590px;
+        width: 1400px;
     }
   }
   @media only screen and (min-width: 2320px) {
@@ -42,7 +42,11 @@
 
 
   @media only screen and (max-width: 1140px) {
-
+    .footer2spalte ul ul{
+      display: block;
+ 
+      padding: 10px
+    }
     .mainnav div{
         flex-wrap: wrap;
     }
@@ -139,6 +143,12 @@
       padding: 8px;
       border-radius: 3px;
     }
+    .footerbtnwrapper div:first-child{
+     
+    }
+    .footerbtnwrapper div:last-child ul{
+     padding-left: 0px;
+    }
   }
 
 
@@ -166,7 +176,10 @@
     #pipepic2{
         display: none;
     }  
-
+    .footer2spalte ul ul{
+      width: 50%;
+    
+    }
     
     #responsivebtn{
         display: block;
@@ -175,7 +188,7 @@
       
     }
     #textblock {
-      right: 15%;
+      right: 20%;
     }
   }
 
@@ -183,6 +196,9 @@
   @media only screen and (max-width: 678px) {
     #articleboxtext img{
       width: 150px;
+    }
+    .midtoptext h3{
+      font-size: 1.5em;
     }
     .mainfooter{
       height: 750px;
@@ -214,14 +230,20 @@
       display: block;
   
     }
+    #textblock {
+      right: 20%;
+      max-width: 350px;
+    }
 
     .footer2spalte{
       margin-top: 0px;
     }
 
     .mainfooter .footer1spalte{
-      margin: 0 auto;
+      margin-left: 25px;
+     
     }
+
     #footerlogoarea {
       margin-bottom: -20px;
     }
@@ -259,7 +281,23 @@
     }
     .footerbtnwrapper2 div{
       flex-basis: 100%;
-  
+    }
+    #langicon{
+      position: absolute;
+      z-index: 150;
+      top: 22px;
+      right: 100px;
+    }
+    #conticon{
+      position: absolute;
+      z-index: 150;
+      top: 22px;
+      right: 248px;
+    }
+    #pipepic2{
+      display: block;
+      top: 1500px;
+      width: 100px
     }
   }
   @media only screen and (max-width: 570px) {
@@ -269,6 +307,10 @@
     .footerbtnline{
       height: 110px;
     }
+    #textblock {
+      right: 18%;
+      max-width: 300px;
+    }
 
   }
   @media only screen and (max-width: 460px) {
@@ -276,11 +318,19 @@
   .mainbody{
     margin-top: -80px;
   }
+  #pipepic2{
+    display: none;
+  }
+
+  #langicon, #conticon{
+    display: none;
+  }
   .midtoptext h3{
     font-size: 1.5em;
   }
   .articletop, .articlebot{
     height: 10px;
+    background-color: transparent;
   }
   .midtoptext {
     margin-top: 62px
@@ -290,6 +340,12 @@
   }
   #Langs, #Country{
     margin-top: 55px;
+  }
+  #textblock {
+    right: 20%;
+    max-width: 250px;
+    margin: auto;
+
   }
 }
 @media only screen and (max-width: 430px) {
@@ -310,5 +366,11 @@
 @media only screen and (max-width: 385px) {
   #textblock {
     right: 11%;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  #textblock {
+    right: 3%;
   }
 }

@@ -3,6 +3,8 @@ import {useState} from 'react'
 import "./main.css"
 import "./responsive.css"
 import footqr from "./pictures/QrailingFoot.png"
+import langicon from "./pictures/Qrailingsvgs/language_icon.svg"
+import conticon from "./pictures/Qrailingsvgs/location_icon.svg"
 
 
 
@@ -26,7 +28,7 @@ function Footer() {
         console.log(document.cookie)
 
         if(document.cookie.match(/German/g) && document.getElementById("Langs").value == "English"){
-
+            setPh("German")
             delete_cookie('lang');
         }
 
@@ -128,21 +130,20 @@ function Footer() {
    
       </ul>
 </div>
-    <div>
+    <div id="langselec">
 
     <select name="Langs" id="Langs"  onChange={Ceval}>
-    <option value="" placeholder="choose"> </option>
-    <option value="English">English</option>
+ 
+    <option value="" selected="selected">Select lang</option>
+    <option value="English" >English</option>
   <option value="German">German</option>
-  
-
-</select>
+</select><img id="langicon" src={langicon} height="16" width="16"></img>
 <select name="Country" id="Country">
   <option value="Germany">Germany</option>
   <option value="GB">Great Britan</option>
   <option value="AUS">Australia</option>
   <option value="USA">USA</option>
-</select>
+</select><img id="conticon" src={conticon} height="16" width="16"></img>
 
 
     </div>
@@ -167,7 +168,7 @@ function Footer() {
       <ul>
         <li><a>Privacy policy</a></li>
         <li><a>Cookies</a></li>
-        <li><a>Legal notice</a></li>
+        <li id="legalnotice"><a>Legal notice</a></li>
         <li><a>General Terms and Conditions of Business and Delivery</a></li>
    
       </ul>

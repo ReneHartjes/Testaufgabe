@@ -81,7 +81,7 @@ function Navbar() {
    </div>
 
     <div id="responsivebtn">
-        <button id="rspbtn" onClick={Responsivemenu}></button>
+    <img  width= "50" height= "50"src={Logo} /><button id="rspbtn" onClick={Responsivemenu}></button>
         <br/>
 
     </div>
